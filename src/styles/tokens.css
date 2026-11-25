@@ -1,0 +1,82 @@
+/* ============================================================
+   MONGI FANA — Afro-Global Private Chef
+   Design tokens
+   ============================================================ */
+
+:root {
+  /* --- Core palette: obsidian, brass, kente red, palm --- */
+  --ink: #0b0a08;
+  --ink-2: #13110d;
+  --ink-3: #1c1913;
+  --ink-soft: #26221a;
+
+  --bone: #f4f0e6;
+  --bone-2: #e7e0d1;
+  --clay: #b9ae99;
+  --muted: #8c8371;
+
+  --brass: #c9a227;
+  --brass-light: #e6c962;
+  --brass-deep: #8a6c14;
+
+  --kente: #b3271d;
+  --kente-soft: #d4483a;
+  --palm: #1f5c46;
+  --palm-light: #2f8262;
+  --indigo: #1b2a4a;
+  --clay-pot: #a35a2c;
+
+  --gold-grad: linear-gradient(135deg, #8a6c14 0%, #e6c962 45%, #c9a227 70%, #7a5f11 100%);
+
+  /* --- Typography --- */
+  --font-display: 'Bodoni Moda', 'Times New Roman', serif;
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-light: 'Outfit', 'Inter', sans-serif;
+
+  --fs-hero: clamp(3.2rem, 13vw, 12rem);
+  --fs-display: clamp(2.6rem, 7.2vw, 6.5rem);
+  --fs-h2: clamp(2rem, 4.6vw, 4rem);
+  --fs-h3: clamp(1.4rem, 2.2vw, 2rem);
+  --fs-lead: clamp(1.05rem, 1.5vw, 1.35rem);
+  --fs-body: clamp(0.95rem, 1.05vw, 1.05rem);
+  --fs-sm: 0.875rem;
+  --fs-xs: 0.75rem;
+
+  /* --- Space & layout --- */
+  --gutter: clamp(1.25rem, 5vw, 6rem);
+  --max-w: 1560px;
+  --section-y: clamp(5rem, 12vw, 11rem);
+
+  /* --- Motion --- */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out-quart: cubic-bezier(0.76, 0, 0.24, 1);
+  --ease-soft: cubic-bezier(0.4, 0, 0.2, 1);
+  --dur-fast: 0.32s;
+  --dur-mid: 0.7s;
+  --dur-slow: 1.3s;
+
+  /* --- Chrome --- */
+  --nav-h: 88px;
+  --radius-sm: 4px;
+  --radius: 10px;
+  --radius-lg: 22px;
+  --border: 1px solid rgba(201, 162, 39, 0.16);
+  --border-strong: 1px solid rgba(201, 162, 39, 0.38);
+  --shadow-lift: 0 30px 80px -30px rgba(0, 0, 0, 0.85);
+  --shadow-glow: 0 0 60px -10px rgba(201, 162, 39, 0.35);
+}
+
+@media (max-width: 768px) {
+  :root {
+    --nav-h: 70px;
+  }
+}
+
+/* Respect reduced motion globally */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --dur-fast: 0.01ms;
+    --dur-mid: 0.01ms;
+    --dur-slow: 0.01ms;
+  }
+}
